@@ -1,120 +1,33 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-          >babel</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript"
-          target="_blank"
-          rel="noopener"
-          >typescript</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa"
-          target="_blank"
-          rel="noopener"
-          >pwa</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router"
-          target="_blank"
-          rel="noopener"
-          >router</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex"
-          target="_blank"
-          rel="noopener"
-          >vuex</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
-          target="_blank"
-          rel="noopener"
-          >eslint</a
-        >
-      </li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
-        >
-      </li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
-        >
-      </li>
-      <li>
-        <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-          >Twitter</a
-        >
-      </li>
-      <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
-      </li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
+  <div class="hello" id="hello">
+    <img
+      class="img-big"
+      src="../assets/images/bg/glitch-2717636_960_720.jpg"
+      alt="image description"
+    />
+    <div class="text-holder random-words align-center">
+      <h1>
+        我们 <span class="mark" style="opacity: 1;">诞生于虚无</span>,
+        <span class="mark" style="opacity: 1;">致力于人类</span>
+        <!-- <span class="mark" style="opacity: 1;">Gnarwahl</span> -->
+        <br/>为了
+        <span class="mark" style="opacity: 1;">填满空虚</span>
+        <br/><br/><br/>
+        虚拟组织
+        <span class="mark" style="opacity: 1;">Sequnce E</span>
+
+        <div class="text-center">
+          <span class="icon-wrap"
+            ><a
+              aria-label="Random tagline generator"
+              href="#"
+              class="fa fa-random"
+              aria-hidden="true"
+            ></a
+          ></span>
+        </div>
+      </h1>
+    </div>
   </div>
 </template>
 
@@ -123,24 +36,50 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class HelloWorld extends Vue {
-  @Prop() private msg!: string;
+  @Prop() private path!: string;
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+.hello {
+  background: #3f3f41;
+  position: relative;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.img-big {
+  width: 100%;
+  opacity: 0.45;
+  height: -webkit-fill-available;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.align-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 30px 24px 0;
+  position: absolute;
+  max-width: 1048px;
 }
-a {
-  color: #42b983;
+.mark {
+  // color: #f86249;
+  color: #ff7f00;
+}
+h1 {
+  color: #fff;
+  font-size: 68px;
+  line-height: 1.097;
+  margin: 0;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+.image-replace {
+  margin-bottom: 85px;
+}
+.image-replace {
+  margin-bottom: 0px;
 }
 </style>

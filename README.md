@@ -24,7 +24,8 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Tech
-
+抄袭了
+https://www.thegnar.co/
 Vue
 normalize.css
 icomoon.io //for icon
