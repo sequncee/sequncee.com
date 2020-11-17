@@ -29,3 +29,6 @@ https://www.thegnar.co/
 Vue
 normalize.css
 icomoon.io //for icon
+
+
+fullPage.js 

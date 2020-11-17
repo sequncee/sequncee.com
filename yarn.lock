@@ -1645,10 +1645,27 @@ acorn-jsx@^5.2.0:
   resolved "https://registry.npm.taobao.org/acorn-jsx/download/acorn-jsx-5.3.1.tgz?cache=0&sync_timestamp=1599499081211&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Facorn-jsx%2Fdownload%2Facorn-jsx-5.3.1.tgz#fc8661e11b7ac1539c47dbfea2e72b3af34d267b"
   integrity sha1-/IZh4Rt6wVOcR9v+oucrOvNNJns=
 
+acorn-loose@^6.0.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/acorn-loose/-/acorn-loose-6.1.0.tgz#3b2de5b3fc64f811c7b6c07cd9128d1476817f94"
+  integrity sha512-FHhXoiF0Uch3IqsrnPpWwCtiv5PYvipTpT1k9lDMgQVVYc9iDuSl5zdJV358aI8twfHCYMFBRVYvAVki9wC/ng==
+  dependencies:
+    acorn "^6.2.0"
+
+acorn-walk@^6.0.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-6.2.0.tgz#123cb8f3b84c2171f1f7fb252615b1c78a6b1a8c"
+  integrity sha512-7evsyfH1cLOCdAzZAd43Cic04yKydNx0cF+7tiA19p1XnLLPU4dpCQOqpjqwokFe//vS0QqfqqjCS2JkiIs0cA==
+
 acorn-walk@^7.1.1:
   version "7.2.0"
   resolved "https://registry.npm.taobao.org/acorn-walk/download/acorn-walk-7.2.0.tgz?cache=0&sync_timestamp=1597235847625&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Facorn-walk%2Fdownload%2Facorn-walk-7.2.0.tgz#0de889a601203909b0fbe07b8938dc21d2e967bc"
   integrity sha1-DeiJpgEgOQmw++B7iTjcIdLpZ7w=
+
+acorn@^6.0.0, acorn@^6.2.0:
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.2.tgz#35866fd710528e92de10cf06016498e47e39e1e6"
+  integrity sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==
 
 acorn@^6.4.1:
   version "6.4.1"
@@ -3522,6 +3539,16 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
+enhanced-resolve@^2.2.2:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-2.3.0.tgz#a115c32504b6302e85a76269d7a57ccdd962e359"
+  integrity sha1-oRXDJQS2MC6Fp2Jp16V8zdli41k=
+  dependencies:
+    graceful-fs "^4.1.2"
+    memory-fs "^0.3.0"
+    object-assign "^4.0.1"
+    tapable "^0.2.3"
+
 enhanced-resolve@^4.0.0, enhanced-resolve@^4.3.0:
   version "4.3.0"
   resolved "https://registry.npm.taobao.org/enhanced-resolve/download/enhanced-resolve-4.3.0.tgz#3b806f3bfafc1ec7de69551ef93cca46c1704126"
@@ -4287,6 +4314,11 @@ fsevents@~2.1.2:
   version "2.1.3"
   resolved "https://registry.npm.taobao.org/fsevents/download/fsevents-2.1.3.tgz#fb738703ae8d2f9fe900c33836ddebee8b97f23e"
   integrity sha1-+3OHA66NL5/pAMM4Nt3r7ouX8j4=
+
+fullpage.js@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-3.0.9.tgz#fc7dba41d521f020a51e9c00fb0fee0d2e11d552"
+  integrity sha512-CBJZwOkOjX/RToG0L93LwJW4a+/67+AqGEvEagWh1N5KRgDXEOVKlo/TJzCzSI1LsOulb7yqXE8mOzRZzqeYMA==
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -5649,6 +5681,14 @@ memfs@^3.1.2:
   dependencies:
     fs-monkey "1.0.1"
 
+memory-fs@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/memory-fs/-/memory-fs-0.3.0.tgz#7bcc6b629e3a43e871d7e29aca6ae8a7f15cbb20"
+  integrity sha1-e8xrYp46Q+hx1+Kaymrop/FcuyA=
+  dependencies:
+    errno "^0.1.3"
+    readable-stream "^2.0.1"
+
 memory-fs@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npm.taobao.org/memory-fs/download/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"
@@ -5789,7 +5829,7 @@ minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
   resolved "https://registry.npm.taobao.org/minimalistic-crypto-utils/download/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
 
-minimatch@^3.0.4:
+minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npm.taobao.org/minimatch/download/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha1-UWbihkV/AzBgZL5Ul+jbsMPTIIM=
@@ -7319,6 +7359,11 @@ resolve-cwd@^2.0.0:
   dependencies:
     resolve-from "^3.0.0"
 
+resolve-from@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-2.0.0.tgz#9480ab20e94ffa1d9e80a804c7ea147611966b57"
+  integrity sha1-lICrIOlP+h2egKgEx+oUdhGWa1c=
+
 resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/resolve-from/download/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
@@ -8119,10 +8164,28 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
+tapable@^0.2.3:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.9.tgz#af2d8bbc9b04f74ee17af2b4d9048f807acd18a8"
+  integrity sha512-2wsvQ+4GwBvLPLWsNfLCDYGsW6xb7aeC6utq2Qh0PFwgEy7K7dsma9Jsmb2zSQj7GvYAyUGSntLtsv++GmgL1A==
+
 tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
   resolved "https://registry.npm.taobao.org/tapable/download/tapable-1.1.3.tgz?cache=0&sync_timestamp=1600381257656&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftapable%2Fdownload%2Ftapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
   integrity sha1-ofzMBrWNth/XpF2i2kT186Pme6I=
+
+tern@^0.24.3:
+  version "0.24.3"
+  resolved "https://registry.yarnpkg.com/tern/-/tern-0.24.3.tgz#da0d9118490c15af4b1c94553d5f0fafc77a0977"
+  integrity sha512-Z8uvtdWIlFn1GWy0HW5FhZ8VDryZwoJUdnjZU25C7/PBOltLIn1uv+WF3rVq6S1761YbsmbZYRP/l0ZJBCkvrw==
+  dependencies:
+    acorn "^6.0.0"
+    acorn-loose "^6.0.0"
+    acorn-walk "^6.0.0"
+    enhanced-resolve "^2.2.2"
+    glob "^7.1.1"
+    minimatch "^3.0.3"
+    resolve-from "2.0.0"
 
 terser-webpack-plugin@^1.4.3:
   version "1.4.5"
@@ -8643,7 +8706,7 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
-vue-class-component@^7.1.0, vue-class-component@^7.2.3:
+vue-class-component@^7.2.3:
   version "7.2.6"
   resolved "https://registry.npm.taobao.org/vue-class-component/download/vue-class-component-7.2.6.tgz#8471e037b8e4762f5a464686e19e5afc708502e4"
   integrity sha1-hHHgN7jkdi9aRkaG4Z5a/HCFAuQ=
@@ -8685,12 +8748,10 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-property-decorator@^8.4.2:
-  version "8.5.1"
-  resolved "https://registry.npm.taobao.org/vue-property-decorator/download/vue-property-decorator-8.5.1.tgz#571a91cf8d2b507f537d79bf8275af3184572fff"
-  integrity sha1-VxqRz40rUH9TfXm/gnWvMYRXL/8=
-  dependencies:
-    vue-class-component "^7.1.0"
+vue-property-decorator@^9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-9.0.2.tgz#118459d77b4d5613ab2bbccba2edd5d7af685d30"
+  integrity sha512-mxuJHfUGs/3rUyFj2vykDIvYXCUKBrzhemm7mT8dE9QYTbNA/4qVQ5gwhNCIkKyQc8RQIXQ+0jriqinUDuuU9w==
 
 vue-router@^3.2.0:
   version "3.4.5"

@@ -1,4 +1,5 @@
 <template>
+
   <div id="app">
     <Header></Header>
     <!-- <div id="nav">
@@ -14,11 +15,13 @@
 import "normalize.css/normalize.css";
 import Header from "@/components/common/Header0";
 // import Footer from "@/components/common/Footer";
+// import Head from "@/components/common/Head";
 
 export default {
   name: "Top",
   components: {
     Header
+    // Head
     // ,
     // Footer
   }
@@ -31,6 +34,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: calc(100vh);
 }
 body {
   margin: 0;

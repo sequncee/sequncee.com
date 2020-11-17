@@ -1,6 +1,7 @@
 <template>
 
   <div class="fullpage" id="fullpage">
+    <remote-js cdn="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></remote-js>
 
     <img
       class="img-big"
@@ -42,6 +43,38 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 // }
 
 </script>
+<script>
+export default {
+  components: {
+    'remote-js': {
+        render(h) {
+            return (
+                <script type= 'text/javascript' src={this.cdn}/>
+            )
+        },
+        props: {
+            cdn:  {
+                type: String,
+                required: true
+            }
+        }
+    },
+    'remote-css': {
+        render(h) {
+            return (
+                <link rel='stylesheet' type='text/css' href={this.cdn} />
+            )
+        },
+        props: {
+            cdn:  {
+                type: String,
+                required: true
+            }
+        }
+    }
+}
+}
+</script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 // .hello {
@@ -51,7 +84,6 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 .img-big {
   width: 100%;
   opacity: 0.45;
-  height: 950px;
 }
 
 .align-center {

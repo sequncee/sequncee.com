@@ -19,11 +19,11 @@
             </li>
             <li><a aria-label="About" href="/about.html" class="">About</a></li>
             <li><a aria-label="News" href="/news.html" class="">News</a></li>
-            <li>
+            <!-- <li>
               <a aria-label="Blog" href="https://blog.thegnar.co" class=""
                 >Blog</a
               >
-            </li>
+            </li> -->
             <li>
               <a aria-label="Hire Us" href="/hire-us.html" class="">Hire Us</a>
             </li>

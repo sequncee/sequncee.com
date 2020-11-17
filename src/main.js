@@ -4,11 +4,10 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 // element ui
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-// element ui done 
-import 'fullpage.js/dist/fullpage.min.css'
-
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+// element ui done
+import "fullpage.js/dist/fullpage.min.css";
 
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
@@ -19,3 +18,4 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount("#app");
+//# sourceMappingURL=main.js.map
